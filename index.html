@@ -26,4 +26,4 @@ $('menuButton').setAttribute('aria-controls','menuPanel');$('menuButton').setAtt
 function hideMenu(){$('menuPanel').hidden=true;$('menuButton').setAttribute('aria-expanded','false');$('menuButton').focus()}
 $('closeMenu').onclick=hideMenu;
 DATA.forEach((_,i)=>{let b=document.createElement('button');b.textContent='Dictée '+(i+7);b.onclick=()=>{$('dict').value=String(i);reset();hideMenu()};$('menuGrid').append(b)});
-</script></html>
+</script><script src="https://bleja972.github.io/assets/jeux-conseilles.js?v=1" data-recommendations='{"selector":"#result","match":null,"games":[{"title":"Dictée 5 — Les mots en images","url":"https://bleja972.github.io/dictee5/"},{"title":"Dictée 5 — Les phrases à compléter","url":"https://bleja972.github.io/dictee_5a/"}],"questions":false}'></script></html>
